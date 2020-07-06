@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     submit() {
-      this.$http.post('https://vue-resource-25973.firebaseio.com/data.json', this.user)
+      this.$http.post('', this.user)
         .then(response => {
           console.log(response)
         }, error => {
@@ -47,7 +47,7 @@ export default {
         })
     },
     fetchData() {
-      this.$http.get('https://vue-resource-25973.firebaseio.com/data.json')
+      this.$http.get('')
         .then(response => {
           return response.json();
         })
